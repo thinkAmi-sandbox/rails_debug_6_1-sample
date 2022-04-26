@@ -17,7 +17,7 @@ gem 'sass-rails', '>= 6'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   # gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
-  gem 'debug', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'debug', platforms: [:mri, :mingw, :x64_mingw], install_if: ENV['USE_RUBYMINE'].nil?
 end
 
 group :development do
